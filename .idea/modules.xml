@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/pedidoAPI/TotalShakeMicroservices.iml" filepath="$PROJECT_DIR$/pedidoAPI/TotalShakeMicroservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pagamentosAPI/TotalShakeMicroservices (1).iml" filepath="$PROJECT_DIR$/pagamentosAPI/TotalShakeMicroservices (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/desafio_Microsservicos.iml" filepath="$PROJECT_DIR$/.idea/desafio_Microsservicos.iml" />
+    </modules>
+  </component>
+</project>
