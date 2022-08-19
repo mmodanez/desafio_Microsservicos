@@ -2,14 +2,13 @@ package com.totalshakes.pedidos.service;
 
 import com.totalshakes.pedidos.dto.PedidoDTO;
 import com.totalshakes.pedidos.exceptions.NaoExistemPedidosException;
-import com.totalshakes.pedidos.exceptions.PedidoJaCadastradoException;
 import com.totalshakes.pedidos.exceptions.PedidoNaoEncontradoException;
 import com.totalshakes.pedidos.model.Pedido;
 
 import java.util.List;
 
 public interface PedidoService {
-    void savePedido(PedidoDTO pedidoDTO) throws PedidoJaCadastradoException;
+    void savePedido();
 
     PedidoDTO findPedidoById(long id) throws PedidoNaoEncontradoException;
 

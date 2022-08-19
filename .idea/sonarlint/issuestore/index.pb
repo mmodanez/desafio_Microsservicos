@@ -1,0 +1,21 @@
+
+›
+kpagamentosAPI/src/main/java/com/totalshakes/pagamentos/TotalShakeMicroservicesApplicationPagamentosAPI.java,0/0/00f239862bce0bcfff9d6dcccdbc94d3352eaa6f
+ 
+ppagamentosAPI/src/test/java/com/totalshakes/pagamentos/TotalShakeMicroservicesApplicationPagamentosAPITests.java,b/e/be9b1d2fac6919dda218768225c32f66997a9fbe
+|
+LpedidoAPI/src/main/java/com/totalshakes/pedidos/common/CommonExtensions.java,8/1/8106b8ed073b7bb1b2c4fb8e034f73973286349d
+Œ
+\pedidoAPI/src/main/java/com/totalshakes/pedidos/exceptions/PedidoNaoEncontradoException.java,7/9/79bea363bea0c92155c4393c9d6f47c54c7cafd3
+„
+TpedidoAPI/src/main/java/com/totalshakes/pedidos/repository/ItemPedidoRepository.java,2/a/2a9fe1826242d5b8014f4c64261aee8331a2fd9e
+Š
+ZpedidoAPI/src/main/java/com/totalshakes/pedidos/exceptions/NaoExistemPedidosException.java,b/c/bc2a0b3d4b4cc7a09911ee36195eb95923ca33d9
+v
+FpedidoAPI/src/main/java/com/totalshakes/pedidos/dto/ItemPedidoDTO.java,a/c/aca7ddcba3bfbd8103aeb1775fc23d8b30f28ad1
+C
+pedidoAPI/README.md,3/4/3487608cb8fda15fe537e6b8236784e4303513f7
+€
+PpedidoAPI/src/main/java/com/totalshakes/pedidos/repository/PedidoRepository.java,8/5/85e7610418107ebf1df0f25a51a071b1ef371962
+–
+fpedidoAPI/src/test/java/com/totalshakes/pedidos/TotalShakeMicroservicesApplicationPedidosAPITests.java,f/5/f5a84df4e78af91c2e4f5e434fb13b25eb9ae56c

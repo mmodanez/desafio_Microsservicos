@@ -3,7 +3,6 @@ package com.totalshakes.pedidos.service;
 import com.totalshakes.pedidos.common.CommonExtensions;
 import com.totalshakes.pedidos.dto.PedidoDTO;
 import com.totalshakes.pedidos.exceptions.NaoExistemPedidosException;
-import com.totalshakes.pedidos.exceptions.PedidoJaCadastradoException;
 import com.totalshakes.pedidos.exceptions.PedidoNaoEncontradoException;
 import com.totalshakes.pedidos.model.Pedido;
 import com.totalshakes.pedidos.model.Status;
@@ -23,14 +22,11 @@ public class PedidoServiceImplementation extends CommonExtensions implements Ped
     }
 
     @Override
-    public void savePedido(PedidoDTO pedidoDTO) throws PedidoJaCadastradoException {
-        if (pedidoRepository.findById(pedidoDTO.getId()).isPresent())
-            throw new PedidoJaCadastradoException();
+    public void savePedido() {
+        Pedido pedido = new Pedido();
 
-        pedidoDTO.setDataHora(LocalDateTime.now());
-        pedidoDTO.setStatus(Status.REALIZADO);
-
-        Pedido pedido = super.convertToModel(pedidoDTO, Pedido.class);
+        pedido.setDataHora(LocalDateTime.now());
+        pedido.setStatus(Status.REALIZADO);
         pedidoRepository.save(pedido);
     }
 

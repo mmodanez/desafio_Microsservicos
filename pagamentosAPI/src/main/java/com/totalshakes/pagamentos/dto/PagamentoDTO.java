@@ -13,8 +13,6 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 public class PagamentoDTO {
 
-    private Long id;
-
     private BigDecimal valor;
 
     private String nome;

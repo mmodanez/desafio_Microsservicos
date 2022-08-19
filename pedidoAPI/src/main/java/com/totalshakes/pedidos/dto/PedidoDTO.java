@@ -14,11 +14,8 @@ import java.util.List;
 @AllArgsConstructor
 public class PedidoDTO {
 
-    private Long id;
-
     private LocalDateTime dataHora;
 
     private Status status;
 
-    private List<ItemPedidoDTO> itensDTO;
 }
