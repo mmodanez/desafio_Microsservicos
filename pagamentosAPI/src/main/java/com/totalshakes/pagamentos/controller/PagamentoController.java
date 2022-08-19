@@ -1,6 +1,8 @@
 package com.totalshakes.pagamentos.controller;
 
 import com.totalshakes.pagamentos.dto.PagamentoDTO;
+import com.totalshakes.pagamentos.exceptions.NaoHaPagamentosException;
+import com.totalshakes.pagamentos.exceptions.PagamentoNaoEncontradoException;
 import com.totalshakes.pagamentos.model.Pagamento;
 import com.totalshakes.pagamentos.service.PagamentoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,14 +28,14 @@ public class PagamentoController {
 
     @GetMapping("/{id}")
     @ResponseBody
-    public ResponseEntity<PagamentoDTO> findPagamentoById(@RequestBody @PathVariable long id) {
+    public ResponseEntity<PagamentoDTO> findPagamentoById(@RequestBody @PathVariable long id) throws PagamentoNaoEncontradoException {
         PagamentoDTO pagamentoById = pagamentoService.findPagamentoById(id);
         return new ResponseEntity<>(pagamentoById, HttpStatus.OK);
     }
 
     @GetMapping
     @ResponseBody
-    public ResponseEntity<List<Pagamento>> findAllPagamentos() {
+    public ResponseEntity<List<Pagamento>> findAllPagamentos() throws NaoHaPagamentosException {
         List<Pagamento> allPagamentos = pagamentoService.findAllPagamentos();
         return new ResponseEntity<>(allPagamentos, HttpStatus.OK);
     }
@@ -45,7 +47,7 @@ public class PagamentoController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<HttpStatus> deletePagamentoById(@RequestBody @PathVariable long id) {
+    public ResponseEntity<HttpStatus> deletePagamentoById(@RequestBody @PathVariable long id) throws PagamentoNaoEncontradoException {
         pagamentoService.deletePagamentoById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }

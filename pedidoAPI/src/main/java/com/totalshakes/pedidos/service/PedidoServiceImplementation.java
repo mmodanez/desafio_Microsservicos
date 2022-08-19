@@ -37,9 +37,7 @@ public class PedidoServiceImplementation extends CommonExtensions implements Ped
 
 
         Pedido pedidoEncontrado = pedidoRepository.findById(id).get();
-        PedidoDTO pedidoDTO = super.convertToDTO(pedidoEncontrado, PedidoDTO.class);
-
-        return pedidoDTO;
+        return super.convertToDTO(pedidoEncontrado, PedidoDTO.class);
     }
 
     @Override
